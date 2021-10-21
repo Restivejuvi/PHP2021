@@ -80,7 +80,7 @@ function subirArchivo($nombreFichero,$temporalFichero) {
         <div>
        		 <form  enctype="multipart/form-data" action="<?=$_SERVER['PHP_SELF']?>"  method="post"  >
               	 <input type="hidden" name="MAX_FILE_SIZE" value="300000" /> 
-                 <label>Elija el archivo a subir :</label> <input name="archivo1[]" type="file" multiple="multiple"/> <br />
+                 <label>Elija el archivo a subir :</label> <input name="archivo1[]" type="file" accept="image/png, image/jpg" multiple="multiple"/> <br />
                  <input type="submit" value="Subir archivo"/>
             </form>
         </div>
