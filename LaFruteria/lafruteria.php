@@ -26,7 +26,7 @@ function controlador() {
 
 function mostrarFormulariUsuario(): string {
     $ver = '<form method="GET">';
-    $ver .= '<label>Nombre de usuario <input type="text" name="usuario" size="30"></label>';
+    $ver .= '<label>Nombre de usuario: <input type="text" name="usuario" size="30"></label>';
     $ver .= ' <input type="submit" value="Enviar">';
     $ver .= '</form>';
 
@@ -65,7 +65,7 @@ function mostrarPedido(): string {
 }
 
 function mostarFormularioNuevoCliente(): string {
-    $ver = "<p>Muchas gracias por su pedido</p>";
+    $ver = "<p>Muchas gracias por su compra</p>";
     $ver .= "<input type='button' name='nuevo_cliente' value='NUEVO CLIENTE' onclick='location.href=\"" . $_SERVER['PHP_SELF'] . "\"' >";
     return $ver;
 }
@@ -80,7 +80,7 @@ function imprimirPantalla(string $contenido) {
     $ver .= '<title>La Frutería</title>';
     $ver .= '</head>';
     $ver .= '<body>';
-    $ver .= '<h1>Bienvenido a la frutería del siglo XXI</h1>';
+    $ver .= '<h1>Bienvenido a la Frutería del Siglo XXI</h1>';
     $ver .= $contenido;
     $ver .= '</body>';
     $ver .= '</html>';
